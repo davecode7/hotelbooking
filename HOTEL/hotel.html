@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d72814cc52.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="hotel.css">
+    <link rel="icon" href="imgs/home.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Dave Hotels</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="head-top">
+            <div class="site">
+                <span>Dave Hotels</span>
+            </div>
+            <div class="nav-bar">
+                <span id="navbtn">MENU<i class="fas fa-bars"></i></span>
+            </div>
+        </div>
+        <div class="head-flex">
+            <h2>Your Gateway To Unforgettable City Views</h2>
+            <p>Experience unparalleled hospitality at our hotel, 
+                nestled in the heart of the city. Each room is a blend of comfort and elegance, designed to ensure your stay is as relaxing as possible.
+                 With a range of modern amenities, delectable dining options,
+                 and stunning city views, we promise an unforgettable stay.</p>
+                <button type="button" class="head-btn">GET STARTED</button>
+        </div>
+    </header>
+        <div class="sidebar" id="sidebar">
+            <span class="cancel-btn" id="cancel-btn">
+               <i class="fas fa-times"></i></span>
+               <ul class="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Rooms</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">About</a></li>
+               </ul>
+               <button class="create-ac">Create an Account</button>
+               <button class="login">Log in</button>
+        </div>
+<div id="modal"></div>
+<section class="services" id="services">
+    <div class="title">
+        <h2>SERVICES</h2>
+    </div>
+    <div class="ser-container">
+        <article class="service">
+            <div class="ser-icon">
+                <span><i class="fas fa-utensils"></i>
+                </span>
+            </div>
+            <div class="ser-content">
+                <h2>Food Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, illo fugiat. Quas eos sapiente asperiores eum. Pariatur sapiente quia ipsum unde obcaecati voluptatum impedit ea, magni iure vero, perspiciatis tempore?</p>
+                <button type="button" class="btn">Read More</button>
+            </div>
+        </article>
+        <article class="service">
+            <div class="ser-icon">
+                <span><i class="fas fa-swimming-pool"></i>
+                </span>
+            </div>
+            <div class="ser-content">
+                <h2>Refreshment</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Tempore, illo fugiat. 
+                    Quas eos sapiente asperiores eum.
+                     Pariatur sapiente quia ipsum unde obcaecati voluptatum impedit ea,
+                     magni iure vero, perspiciatis tempore?</p>
+                     <button type="button" class="btn">Read More</button>
+            </div>
+        </article>
+        <article class="service">
+            <div class="ser-icon">
+                <span><i class="fas fa-broom"></i>
+                </span>
+            </div>
+            <div class="ser-content">
+                <h2>HouseKeeping</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, illo fugiat. Quas eos sapiente asperiores eum. Pariatur sapiente quia ipsum unde obcaecati voluptatum impedit ea, magni iure vero, perspiciatis tempore?</p>
+                <button type="button" class="btn">Read More</button>
+            </div>
+        </article>
+        <article class="service">
+            <div class="ser-icon">
+                <span><i class="fas fa-door-closed"></i>
+                </span>
+            </div>
+            <div class="ser-content">
+                <h2>Room Security</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, illo fugiat. Quas eos sapiente asperiores eum. Pariatur sapiente quia ipsum unde obcaecati voluptatum impedit ea, magni iure vero, perspiciatis tempore?</p>
+                <button type="button" class="btn">Read More</button>
+            </div>
+        </article>
+    </div>
+</section>
+
+<div class="book">
+    <form action="" class= "book-form">
+        <div class="form-item">
+            <label for="checkin-date">Check In Date: </label>
+       <input type="date" id="checkin-date">
+        </div>
+        <div class="form-item">
+            <label for="checkout-date">Check Out Date: </label>
+       <input type="date" id="checkout-date">
+        </div>
+        <div class="form-item">
+            <label for="Adult">Adult: </label>
+       <input type="number" min="1" value="1" id="Adult">
+        </div>
+        <div class="form-item">
+            <label for="Children">Children: </label>
+       <input type="number" min="1" value="1" id="Children">
+       <div class="form-item">
+        <label for="Room">Room: </label>
+        <input type="number" min="1" value="1" id="Room">
+       </div>
+       <div class="form-item">
+        <input type="submit" class="btn" value="book now">
+       </div>
+ </form>
+</div>
+<section class="room-sec" id="rooms">
+    <div class="title">
+        <h2>Rooms</h2>
+    </div>
+    <div class="room-container">
+        <article class="room">
+            <div class="room-image">
+                <img src="imgs/contrast.jpg" alt="contrast">
+            </div>
+                <div class="room-text">
+                    <p>GRAND SUITE ROOM</p>
+               <ul>
+                <li>
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </li>
+                <li>
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </li>
+                <li>
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </li>
+               </ul>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum autem explicabo neque sit inventore voluptatibus ad quas deserunt aliquam amet, quibusdam magnam quisquam laudantium, ex aut nulla asperiores repudiandae!</p>
+          
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque fugit a corrupti perspiciatis placeat corporis quia sapiente eligendi eum quisquam totam inventore. Repudiandae veritatis nihil autem vitae quis assumenda.</p>
+           <p class="rating">
+            <span>GHS 1200 /</span> Per Night
+           </p>
+           <button type="button" class="btn">Book Now</button>
+            </div>
+        </article>
+
+        <article class="room">
+            <div class="room-image">
+                <img src="imgs/awesome.jpg" alt="" width="400" height="400">
+            </div>
+                <div class="room-text">
+                    <p>DELUXE ROOM</p>
+               <ul>
+                <li>
+                    <i class= "fas fa-arrow-alt-circle-right"></i>
+                </li>
+                <li>
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </li>
+                <li>
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </li>
+               </ul>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum autem explicabo neque sit inventore voluptatibus ad quas deserunt aliquam amet, quibusdam magnam quisquam laudantium, ex aut nulla asperiores repudiandae!</p>
+          
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque fugit a corrupti perspiciatis placeat corporis quia sapiente eligendi eum quisquam totam inventore. Repudiandae veritatis nihil autem vitae quis assumenda.</p>
+           <p class="rating">
+            <span>GHS 1200 /</span> Per Night
+           </p>
+           <button type="button" class="btn">Book Now</button>
+            </div>
+        </article>
+        <article class="room">
+            <div class="room-image">
+                <img src="imgs/bedroom.jpg" alt="" height="400" width="400">
+            </div>
+                <div class="room-text">
+                    <p>TRADITIONAL ROOM</p>
+               <ul>
+                <li>
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </li>
+                <li>
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </li>
+                <li>
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </li>
+               </ul>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum autem explicabo neque sit inventore voluptatibus ad quas deserunt aliquam amet, quibusdam magnam quisquam laudantium, ex aut nulla asperiores repudiandae!</p>
+          
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque fugit a corrupti perspiciatis placeat corporis quia sapiente eligendi eum quisquam totam inventore. Repudiandae veritatis nihil autem vitae quis assumenda.</p>
+           <p class="rating">
+            <span>GHS 1200 /</span> Per Night
+           </p>
+           <button type="button" class="btn">Book Now</button>
+            </div>
+        </article>
+        <article class="room">
+            <div class="room-image">
+                <img src="imgs/living room.jpg" alt="" >
+            </div>
+                <div class="room-text">
+                    <p>LIVING ROOM</p>
+               <ul>
+                <li>
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </li>
+                <li>
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </li>
+                <li>
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </li>
+               </ul>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rerum autem explicabo neque sit inventore voluptatibus ad quas deserunt aliquam amet, quibusdam magnam quisquam laudantium, ex aut nulla asperiores repudiandae!</p>
+          
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque fugit a corrupti perspiciatis placeat corporis quia sapiente eligendi eum quisquam totam inventore. Repudiandae veritatis nihil autem vitae quis assumenda.</p>
+           <p class="rating">
+            <span>GHS 1200 /</span> Per Night
+           </p>
+           <button type="button" class="btn">Book Now</button>
+            </div>
+        </article>
+    </div>
+</section>
+<section class="customers" id="customers">
+    <div class="sec-width">
+        <div class="title">
+            <h2>Customers</h2>
+        </div>
+        <div class="customer-cont">
+            <div class="customer">
+                <div class="rate">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                </div>
+                <h3>Great Customer Service</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur sint dolor magnam consequuntur, eius impedit recusandae. Excepturi autem dignissimos sed eveniet! Cum accusamus similique in corrupti, aspernatur minima quo omnis.</p>
+                <img src="imgs/customer service.jpg" alt="">
+                <span>customer name, country</span>
+            </div>
+            <div class="customer">
+                <div class="rate">
+                    <span><i class="fa fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                </div>
+                <h3>Delectable meal</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur sint dolor magnam consequuntur, eius impedit recusandae. Excepturi autem dignissimos sed eveniet! Cum accusamus similique in corrupti, aspernatur minima quo omnis.</p>
+                <img src="imgs/delectable meal.jpg" alt="">
+                <span>customer name, country</span>
+            </div>
+            <div class="customer">
+                <div class="rate">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                </div>
+                <h3>Comfortable Place To Stay</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur sint dolor magnam consequuntur, eius impedit recusandae. Excepturi autem dignissimos sed eveniet! Cum accusamus similique in corrupti, aspernatur minima quo omnis.</p>
+                <img src="imgs/welcome.jpg" alt="">
+                <span>customer name, country</span>
+            </div>
+            <div class="customer">
+                <div class="rate">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                </div>
+                <h3>Serene And Aesthetic Place</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur sint dolor magnam consequuntur, eius impedit recusandae. Excepturi autem dignissimos sed eveniet! Cum accusamus similique in corrupti, aspernatur minima quo omnis.</p>
+                <img src="imgs/sittpal.jpg" alt=""><br>
+                <span>customer name, country</span>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-cont">
+        <div>
+            <h2>ABOUT US</h2>
+            <p></p>
+            <ul class="social-icons">
+                <li class="foot">
+                    <i class="fa fa-facebook fa-fw"></i>
+                </li>
+                <li class="foot">
+                    <i class="fa fa-twitter fa-fw"></i>
+                </li>
+                <li class="foot">
+                    <i class="fa fa-instagram fa-fw"></i>
+                </li>
+                <li class="foot">
+                    <i class="fa fa-behance fa-fw"></i>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>Useful links</h2>
+            <a href="">Contact us</a>
+            <a href="">Help Center</a>
+            <a href="">Terms And Conditions</a>
+            <a href="">Our Services</a>
+        </div>
+        <div>
+            <h2>Privacy</h2>
+            <a href="">Legal policy</a>
+            <a href="">Status policy</a>
+            <a href="">Privacy policy</a>
+            <a href="">Terms of service</a>
+        </div>
+      <div>
+         <h2>Have A Question</h2>
+          <div class="contact-item">
+                <span>
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+             <span>
+               69 Boundary Rd, East-legon, Accra, Ghana
+             </span>
+          </div>
+          <div class="contact-item">
+            <span>
+              <i class="fas fa-phone-alt"></i>
+            </span>
+         <span>
+          (+233) 55 944 1309
+         </span>
+      </div>
+      <div class="contact-item">
+        <span>
+          <i class="fas fa-envelope-alt"></i>
+        </span>
+     <span>
+      ddagyemang3@gmail.com
+     </span>
+  </div>
+     </div>
+        </div>
+</footer>
+</body>
+</html>
